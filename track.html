@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="tracking.style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <span class="logo">
+                <img src="images/Zarveth Global Logistics Logo.png" alt="logo" class="logo-image">
+            </span>
+
+             <button class="hamburger" aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobile-menu">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="track.html">Track Shipment</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="quote-dropdown">
+
+    <button class="quote-btn" id="quoteToggle" type="button">
+        Get a Quote
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="quote-form" id="quoteForm">
+
+        <h2>Request a Quote</h2>
+        <p>Tell us about your shipment and we'll prepare a quote for you.</p>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Shipment Type</option>
+                <option>International Shipping</option>
+                <option>Domestic Delivery</option>
+                <option>Freight Forwarding</option>
+            </select>
+
+            <input type="text" placeholder="Pickup Location" required>
+
+            <input type="text" placeholder="Delivery Destination" required>
+
+            <input type="number" placeholder="Package Weight (kg)" min="0.1" step="0.1" required>
+
+            <textarea placeholder="Additional Information (Optional)"></textarea>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+
+    </div>
+
+</div>
+          </div>  
+    </header>
+
+    <main class="tracking-page">
+    <section class="tracking-hero">
+        <p class="tracking-eyebrow">SHIPMENT TRACKING</p>
+        <h1>Where is your shipment?</h1>
+        <p>Enter your tracking number to check your shipment’s latest update.</p>
+
+        <form class="tracking-form" id="trackingForm">
+            <label class="sr-only" for="trackingNumber">Tracking number</label>
+            <input
+                id="trackingNumber"
+                name="trackingNumber"
+                type="text"
+                placeholder="Enter your tracking number"
+                autocomplete="off"
+                required
+            >
+            <button type="submit">Track Shipment</button>
+        </form>
+
+        <p class="tracking-hint">Demo tracking number: <strong>ZAR123456</strong></p>
+    </section>
+
+    <section
+        class="tracking-result"
+        id="trackingResult"
+        aria-live="polite"
+        hidden
+    ></section>
+</main>
+
+    <footer class="footer">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+        <img src="images/background.png"
+             alt="ZARVETH International Logistics">
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Navigation -->
+    <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="track.html">Track Shipment</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Social Media -->
+    <div class="social-links">
+        <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="copyright">
+        © 2026 ZARVETH. All rights reserved.
+    </p>
+
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
